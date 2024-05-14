@@ -42,6 +42,7 @@ body{
   border-radius: 0 var(--radius) var(--radius) 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .libro__title{
@@ -93,8 +94,16 @@ body{
 
 .libro__fecha{
   position: absolute;
-  right: 30px;
+  left: 30px;
   top: 10px;
+}
+
+.libro__cerrar{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 25px;
+  color: crimson;
 }
 
 /*    COMENTARIO FORM    */
