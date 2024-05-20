@@ -1,4 +1,5 @@
 @import url(variables.css);
+@import url(componentes/header.css);
 
 body{
   font-family: sans-serif;
@@ -8,39 +9,10 @@ body{
 
 
 /*    HEADER    */
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:var(--box-pd);
-  background-color: var(--yellow2);
-  height: var(--header-h);
-}
-
 .header__title{
-  color: var(--yellow);
+  color: var(--green);
+  font-size: clamp(25px, 4vw, 32px);
 }
-
-.header__icon{
-  width: 70px;
-}
-
-.header__user{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.header__btn{
-  height: var(--btn-height);
-  padding: var(--btn-pd);
-  border-radius: var(--radius);
-  border: 0;
-  background-color: var(--yellow);
-  color: var(--yellow4);
-}
-
 
 /*    CONTAINER   */
 .container{
@@ -50,6 +22,8 @@ body{
   gap: 30px;
   max-width: var(--box-width);
   margin: 100px auto;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .container__form{
@@ -57,7 +31,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  max-width: 600px;
   gap: 30px;
 }
 
@@ -72,7 +46,8 @@ body{
 }
 
 .container__input{
-  padding: var(--inp-pd);
+  padding: 10px 10px 10px 15px;
+  width: 285px;
   border: 0;
   border-radius: var(--radius);
   background-color: var(--green3);
@@ -89,13 +64,17 @@ body{
 }
 
 .cerrar{
-  display: none;
+  background-color: lightcoral;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: darkred;
+  border-radius: var(--radius);
 }
 
 
 /*    PREV    */
 .container__prev{
-  width: 600px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,4 +93,21 @@ body{
 
 .container__img{
   width: 350px;
+}
+
+/*  RESPONSIVE  */
+@media screen and (max-width: 1050px){
+  .container__prev{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .container{
+    margin-top: 40px;
+  }
+  
+  .container__input{
+    width: 60vw;
+  }
 }

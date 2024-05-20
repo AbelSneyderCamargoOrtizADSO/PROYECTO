@@ -7,6 +7,7 @@
   padding: var(--box-pd);
   background-color: var(--greenh);
   gap: 20px;
+  position: relative;
 }
 
 .header__img{
@@ -48,6 +49,10 @@
 
 /*    RESPONSIVE    */
 @media screen and (max-width:1200px) {
+  :root{
+    --box-pd: 0 35px;
+  }
+
   .header__search{
     width: 35vw;
   }
@@ -58,8 +63,19 @@
 }
 
 @media screen and (max-width:650px){
+  :root{
+    --box-pd: 0 15px;
+  }
+
+  .header{
+    margin-bottom: 60px;
+  }
+  
   .header__search{
-    width: 80vw;
+    width: 100vw;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
   }
 
   .header__btn{
@@ -72,7 +88,8 @@
     padding: 10px 15px;
   }
 
-  .header__img{
-    display: none;
+  .header__search{
+    order: 4;
   }
+
 }

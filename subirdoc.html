@@ -10,14 +10,19 @@
 
 <body>
   <header class="header">
+    <img src="assets/escu.png" alt="" class="header__img">
     <h1 class="header__title">Subir Documento</h1>
     <div class="header__user">
-      <img src="assets/iconouser.png" alt="" class="header__icon">
-      <button class="header__btn">Cerrar Sesión</button>
+      <img src="assets/iconouser.png" alt="" class="header__img header__img--display">
+      <button class="header__btn">Cerrar sesión</button>
+      <button class="header__btn header__btn--resp"><i class="bi bi-box-arrow-right"></i></button>
     </div>
   </header>
+
   <main>
     <section class="container">
+      <a class="cerrar" href="home.html">🡸 Volver</a>
+
       <form action="" class="container__form">
         <div class="container__inputs">
           <input type="text" class="container__input" placeholder="Título del documento">
@@ -29,7 +34,6 @@
         </div>
 
         <button class="container__btn">PUBLICAR AHORA ➜</button>
-
       </form>
 
       <div class="container__prev">
@@ -37,7 +41,6 @@
         <img src="assets/libro.png" alt="" class="container__img">
       </div>
 
-      <button class="cerrar header__btn"> Volver</button>
     </section>
 
   </main>

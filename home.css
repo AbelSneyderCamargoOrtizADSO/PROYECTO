@@ -104,10 +104,6 @@ body{
 
 
 @media screen and (max-width:1200px) {
-  :root{
-    --box-pd: 0 35px;
-  }
-
   .filter{
     justify-content: center;
     gap: 20px;
@@ -126,10 +122,6 @@ body{
 }
 
 @media screen and (max-width:650px){
-  :root{
-    --box-pd: 0 15px;
-  }
-
   .books{
     gap: 20px;
   }
