@@ -31,7 +31,47 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+  cursor: pointer;
+  position: relative;
 }
+.header__menu{
+  padding: 10px 0;
+}
+
+.header__menu:hover .nav{
+  display: block;
+}
+
+.nav{
+  position: absolute;
+  top: 98%;
+  width: 180px;
+  height: auto;
+  background-color: var(--bluefil);
+  border-radius: var(--radius);
+  display: none;
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.nav__link{
+  text-decoration: none;
+  padding: 10px;
+  color: var(--green);
+}
+
+.nav__link:hover{
+  text-decoration: underline;
+}
+
+
 
 .header__menu{
   display: flex;

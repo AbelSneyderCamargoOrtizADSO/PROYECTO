@@ -17,6 +17,26 @@ button:hover{
   margin: 50px 0;
 }
 
+.container__top{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: var(--box-pd);
+}
+
+.volver{
+  align-self: center;
+  justify-self: start;
+  padding: var(--btn-pd);
+  height: var(--btn-height);
+  border-radius: var(--radius);
+  background-color: var(--blue);
+  color: var(--blue3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 /*    SOLICITUDES    */
 .container{
   display: grid;

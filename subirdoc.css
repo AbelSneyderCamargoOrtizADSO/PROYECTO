@@ -18,8 +18,8 @@ body{
 .container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
+  align-items: center; 
+  gap: 50px;
   max-width: var(--box-width);
   margin: 100px auto;
   flex-wrap: wrap;
@@ -33,6 +33,7 @@ body{
   align-items: center;
   max-width: 600px;
   gap: 30px;
+  position: relative;
 }
 
 .container__inputs{
@@ -64,11 +65,12 @@ body{
 }
 
 .cerrar{
-  background-color: lightcoral;
-  padding: 5px 15px;
-  text-decoration: none;
-  color: darkred;
+  position: absolute;
+  color: crimson;
+  font-size: 25px;
   border-radius: var(--radius);
+  top: 14px;
+  right: 14px;
 }
 
 
@@ -109,5 +111,9 @@ body{
   
   .container__input{
     width: 60vw;
+  }
+
+  .header__title{
+    display: none;
   }
 }
