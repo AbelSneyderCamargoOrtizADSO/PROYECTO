@@ -30,7 +30,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+}
+
+.header__menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: row-reverse;
 }
 
 .header__btn{
